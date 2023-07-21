@@ -1,0 +1,392 @@
+/*=== Aplicnado CSS universal===*//*color naranja #FC7300, color azul#00425A, color negro #181823, color clarito #EFF5F5, color verdoso #1F8A70 */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+/**
+@font-face {
+    font-family: "Poppins", sans-serif;
+    src: url(fonts.google.com/specimen/Poppins);
+}
+*/
+ul{
+    list-style-type: none;
+
+}
+
+img{
+    width: 100%;
+
+    
+}
+a{
+    text-decoration: none;
+    color: #EFF5F5 ;
+    text-shadow: 1px 1px #181823;
+    
+}
+/*=== Aplicando Css al encabezado===*/
+#menu{
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgb(31, 138, 112, 0.90);
+    align-items: center;
+    padding: 25px;
+    
+}
+
+ul#opcionesIzquierda li a:hover {
+    text-shadow: -1px 0 #FC7300, 0 2px #FC7300, 2px 0 #FC7300, 0 -1px #FC7300;  
+  }
+ul#opcionesDerecha li a:hover {
+    text-shadow: -1px 0#00425A, 0 2px #00425A, 2px 0 #00425A, 0 -1px #00425A;  
+  }
+
+ 
+/*===Aplicando css al main ===*/
+#banner{
+    position: relative;
+    height: 50%;
+}
+
+.tituloCentrado{
+    align-items: center;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 25px;
+    bottom: -40px;
+    background-color: #FC7300;
+    color: #00425A;
+    z-index: 1;
+    text-shadow: 1px 1px #EFF5F5;
+    
+}
+.tituloIzquierda{
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 25px;
+    width: 70%;
+    bottom: -40px;
+    background-color: #FC7300;
+    color: #00425A;
+    z-index: 1;
+    text-shadow: 1px 1px #EFF5F5;
+}
+.parrafosPrincipales{
+    position: relative;
+    text-align: justify;
+    top: 30px;
+    margin: 30px;
+    color: #181823;
+    word-spacing:-2px ;
+    line-height: 1.4;
+}
+.imagenesPrincipales{
+    display: flex;
+    box-shadow: 10px 10px 30px #181823;
+    border-radius: 10px;
+}
+#propuestaEducativa{
+    box-shadow: 10px 10px 30px #181823;
+}
+.fotoNoticia{
+    border-radius: 5px;
+}
+.noticia{
+    margin-top: 50px;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 5px 10px #181823;
+}
+.tituloNoticia{
+    margin-top: 30px;
+}
+.botonNoticia{
+    background-color:#2f2f61;
+    border: none;
+    color: #EFF5F5;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.botonNoticia:hover{
+    background-color:gray ;
+    color: #2f2f61;
+}
+
+/*=== Aplicando css al pie de pagina ===*/
+#piePagina{
+    background-color: #00425A;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+.contenidoPie{
+    align-items: center;
+    justify-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.icon{
+   display: flex;
+    height: 30px;
+    width: 30px;
+}
+
+ul.contenidoPie li a:hover{
+    text-shadow: -1px 0 #FC7300, 0 2px #FC7300, 2px 0 #FC7300, 0 -1px #FC7300;
+}
+.icon:hover{
+    text-shadow: -1px 0 #FC7300, 0 2px #FC7300, 2px 0 #FC7300, 0 -1px #FC7300;
+}
+/*===Aplicnado css al formulario ===*/
+.formRegistro{  
+    background: #1F8A70;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 10px 15px 35px #181823;
+}
+#tituloFormulario{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #EFF5F5;
+    text-shadow: 2px 2px #181823;
+}
+.controles{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #FC7300;
+}
+
+.formRegistro a:hover{
+    text-decoration: underline;
+}
+.boton{
+    width: 100%;
+    background: #FC7300;
+    padding: 12px;
+    color: #181823;
+    font-weight: bolder;
+    font-size: medium;
+    text-shadow: 1px 1px 1px #EFF5F5;
+}
+.boton:hover{
+    background: greenyellow;
+    font-size: large;
+    box-shadow: 10px 15px 35px #181823;
+}
+#fondoFormulario{
+    background: #00425A;
+}
+/*=== Aplicando comportamiento adaptativo ===*/
+@media (min-width: 320px){
+    #menu{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 20px;
+        
+    }
+    li a{
+        font-weight: bolder;
+        
+    }
+   
+    #subtituloBanner{
+        position: absolute;
+        top: 60%;
+        font-size: 1.5rem;
+        color: white;
+        background-color: rgba( 0,0,0, 0.6);
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .tituloCentrado{
+        font-size: 1.5rem;
+        width: 70%;
+        margin: auto;
+        padding: 20px;
+        
+       
+    }
+    .tituloIzquierda{
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+
+    .parrafosPrincipales{
+        top: 15px;
+    }
+    #imagenPropuesta{
+        display: flex;
+        height: 30vh;
+        width: 100vw;
+    }
+    #ultimasNoticias{
+        margin: 20px;
+        text-align: justify;
+    }
+    
+    #iconosRedes{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    /*===Comportamiento adaptativo para formulario pequeño ===*/
+    .formRegistro{
+        width: 300px ;
+        margin-top: 10%;
+    }
+    .formRegistro p{
+        height: 50px;
+        text-align: center;
+        align-items: center;
+        line-height: 40px;
+        
+    }
+}
+/*===Comportamiento adaptativo tamaño mediano ===*/
+@media (min-width: 768px){
+    
+    #menu{
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+    }
+    li a{
+       
+        font-size: large;
+        text-align: center;
+    }
+   
+    #subtituloBanner{
+        position: absolute;
+        top: 60%;
+        font-size: 4rem;
+        color: white;
+        background-color: rgba( 0,0,0, 0.6);
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    #opcionesIzquierda{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+    
+    #quienesSomos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #porqueElejirnos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #propuestaEducativa{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    #imagenPropuesta{
+        display: flex;
+        height: 50vh;
+        width: 50vw ;
+    }
+    #ultimasNoticias{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        
+          
+    }
+    #piePagina{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        padding: 20px;
+        margin-top: 20px;
+        }
+    
+    
+    /*=== Comportamiento adaptativo para formulario===*/
+    .formRegistro{
+        width: 400px;
+    }
+    .formRegistro p{
+        text-align: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+    
+ }
+ /*===Comportamiento adaptativo tamaño grande ===*/
+@media (min-width: 1200px){
+    #propuestaEducativa{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #banner{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+         }
+    #quienesSomos{
+        display: flex;
+        height: 60vh;
+        margin-bottom: 20px;
+    }
+    #porqueElejirnos{
+        display: flex;
+        height: 60vh;
+        margin-bottom: 20px;
+    }
+    .parrafosPrincipales{
+        font-size: larger;
+        line-height: 1.6;
+        
+    }
+    .tituloCentrado, .tituloIzquierda{
+        font-size: 40px;
+    }
+    .propuestaEducativa{
+        margin-bottom: 20px;
+        
+    }
+    #imagenPropuesta{
+        display: flex;
+        height: 35vh;
+        width: 25vw;
+    }
+    #ultimasNoticias{
+        gap: 50px;
+        margin: 50px;
+        margin-bottom: 100px;
+    }
+    .noticia{
+        padding: 40px;
+    }
+}
