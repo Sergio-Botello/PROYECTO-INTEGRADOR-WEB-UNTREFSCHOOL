@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-   
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
@@ -17,38 +16,62 @@
 */
 ul{
     list-style-type: none;
-
 }
 
 img{
-    width: 100%;
-
-    
+    width: 100%;    
 }
+
 a{
     text-decoration: none;
     color: #EFF5F5 ;
     text-shadow: 1px 1px #181823;
-    
 }
+
 /*=== Aplicando Css al encabezado===*/
 #menu{
     text-align: center;
     justify-content: space-between;
     background-color: rgb(31, 138, 112, 0.90);
     align-items: center;
-    padding: 25px;
-    
 }
 
-ul#opcionesIzquierda li a:hover {
-    text-shadow: -1px 0 #FC7300, 0 2px #FC7300, 2px 0 #FC7300, 0 -1px #FC7300;  
-  }
-ul#opcionesDerecha li a:hover {
-    text-shadow: -1px 0#00425A, 0 2px #00425A, 2px 0 #00425A, 0 -1px #00425A;  
-  }
+#opcionesIzquierda{
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
 
- 
+#opcionesIzquierda :hover {
+    text-shadow: -1px 0 #FC7300, 0 2px #FC7300, 2px 0 #FC7300, 0 -1px #FC7300;  
+    transform: scale(1.05);
+}
+
+#itemDerecho2 a img{
+    position: relative;
+    width: 100%;
+    margin-top: -5px;
+    padding: 0;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+#itemDerecho2 a :hover{
+    transform: scale(1.05);
+}
+
+#itemDerecho1{
+    background-color: #154f41;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+#itemDerecho1:hover {
+    background-color: aquamarine;
+    padding: 5px;
+    transform: scale(1.05);
+}
+
 /*===Aplicando css al main ===*/
 #banner{
     position: relative;
@@ -68,9 +91,9 @@ ul#opcionesDerecha li a:hover {
     background-color: #FC7300;
     color: #00425A;
     z-index: 1;
-    text-shadow: 1px 1px #EFF5F5;
-    
+    text-shadow: 1px 1px #EFF5F5;   
 }
+
 .tituloIzquierda{
     position: relative;
     font-size: 2rem;
@@ -84,6 +107,7 @@ ul#opcionesDerecha li a:hover {
     z-index: 1;
     text-shadow: 1px 1px #EFF5F5;
 }
+
 .parrafosPrincipales{
     position: relative;
     text-align: justify;
@@ -93,17 +117,21 @@ ul#opcionesDerecha li a:hover {
     word-spacing:-2px ;
     line-height: 1.4;
 }
+
 .imagenesPrincipales{
     display: flex;
     box-shadow: 10px 10px 30px #181823;
     border-radius: 10px;
 }
+
 #propuestaEducativa{
     box-shadow: 10px 10px 30px #181823;
 }
+
 .fotoNoticia{
     border-radius: 5px;
 }
+
 .noticia{
     margin-top: 50px;
     padding: 5px;
@@ -111,9 +139,11 @@ ul#opcionesDerecha li a:hover {
     border-radius: 8px;
     box-shadow: 1px 5px 10px #181823;
 }
+
 .tituloNoticia{
     margin-top: 30px;
 }
+
 .botonNoticia{
     background-color:#2f2f61;
     border: none;
@@ -124,10 +154,14 @@ ul#opcionesDerecha li a:hover {
     font-size: 20px;
     display: inline-block;
     margin-top: 10px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
 }
+
 .botonNoticia:hover{
     background-color:gray ;
     color: #2f2f61;
+    transform: scale(1.1);
 }
 
 /*=== Aplicando css al pie de pagina ===*/
@@ -137,8 +171,8 @@ ul#opcionesDerecha li a:hover {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
-
 }
+
 .contenidoPie{
     align-items: center;
     justify-items: center;
@@ -150,6 +184,8 @@ ul#opcionesDerecha li a:hover {
    display: flex;
     height: 30px;
     width: 30px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
 }
 
 ul.contenidoPie li a:hover{
@@ -157,7 +193,9 @@ ul.contenidoPie li a:hover{
 }
 .icon:hover{
     text-shadow: -1px 0 #FC7300, 0 2px #FC7300, 2px 0 #FC7300, 0 -1px #FC7300;
+    transform: scale(1.2);
 }
+
 /*===Aplicnado css al formulario ===*/
 .formRegistro{  
     background: #1F8A70;
@@ -166,6 +204,7 @@ ul.contenidoPie li a:hover{
     border-radius: 4px;
     box-shadow: 10px 15px 35px #181823;
 }
+
 #tituloFormulario{
     font-size: 22px;
     margin-bottom: 20px;
@@ -173,6 +212,7 @@ ul.contenidoPie li a:hover{
     color: #EFF5F5;
     text-shadow: 2px 2px #181823;
 }
+
 .controles{
     width: 100%;
     padding: 10px;
@@ -184,6 +224,7 @@ ul.contenidoPie li a:hover{
 .formRegistro a:hover{
     text-decoration: underline;
 }
+
 .boton{
     width: 100%;
     background: #FC7300;
@@ -192,93 +233,109 @@ ul.contenidoPie li a:hover{
     font-weight: bolder;
     font-size: medium;
     text-shadow: 1px 1px 1px #EFF5F5;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
 }
+
 .boton:hover{
-    background: greenyellow;
-    font-size: large;
+    background: aquamarine;
     box-shadow: 10px 15px 35px #181823;
+    transform: scale(1.05);
 }
+
 #fondoFormulario{
     background: #00425A;
 }
-/*=== Aplicando comportamiento adaptativo ===*/
+/*=== Aplicando comportamiento adaptativo pequeño===*/
 @media (min-width: 320px){
     #menu{
+        position: fixed;
+        z-index: 10;
+        width: 100%;
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        padding: 20px;
-        
+        grid-template-columns: 2fr 1fr;    
     }
+
     li a{
-        font-weight: bolder;
-        
+        font-size: medium;
+        font-weight: bolder;   
     }
    
+    #opcionesDerecha{
+        display: grid;
+        grid-template-rows: 2fr 1fr;   
+    }
+
+    #itemDerecho1{
+        position:relative;
+        align-items: center;
+        text-align: center;
+        padding: 6px;
+        margin: auto;
+        margin-top: -6px;
+    }
+
     #subtituloBanner{
         position: absolute;
-        top: 60%;
-        font-size: 1.5rem;
+        top: 70%;
+        font-size: xx-large;
         color: white;
         background-color: rgba( 0,0,0, 0.6);
-        padding: 20px;
+        padding: 10px;
         width: 100%;
         text-align: center;
     }
-    
-    .tituloCentrado{
-        font-size: 1.5rem;
+
+    .tituloCentrado {
+        font-size: x-large;
         width: 70%;
         margin: auto;
-        padding: 20px;
-        
-       
+        padding: 20px; 
     }
+
     .tituloIzquierda{
+        font-size: x-large;
         padding: 20px;
-        font-size: 1.5rem;
     }
 
     .parrafosPrincipales{
         top: 15px;
     }
+
     #imagenPropuesta{
         display: flex;
         height: 30vh;
         width: 100vw;
     }
+
     #ultimasNoticias{
         margin: 20px;
         text-align: justify;
     }
-    
+
     #iconosRedes{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        
+        grid-template-columns: repeat(3, 1fr);   
     }
+
     /*===Comportamiento adaptativo para formulario pequeño ===*/
     .formRegistro{
         width: 300px ;
         margin-top: 10%;
     }
+
     .formRegistro p{
         height: 50px;
         text-align: center;
         align-items: center;
-        line-height: 40px;
-        
+        line-height: 40px;   
     }
 }
+
 /*===Comportamiento adaptativo tamaño mediano ===*/
 @media (min-width: 768px){
-    
-    #menu{
-        position: fixed;
-        z-index: 10;
-        width: 100%;
-    }
+     
     li a{
-       
         font-size: large;
         text-align: center;
     }
@@ -293,37 +350,61 @@ ul.contenidoPie li a:hover{
         width: 100%;
         text-align: center;
     }
+
     #opcionesIzquierda{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         align-items: center;
     }
+
+    #opcionesDerecha{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    #itemDerecho2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin-top: 0px;
+        margin-bottom: -10px;
+    }
     
+    #itemDerecho1{
+        position: relative;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1.5;
+        grid-row-end: 1;
+        margin-top: 10%;
+    }
+
     #quienesSomos{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
     #porqueElejirnos{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
     #propuestaEducativa{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        
+        grid-template-columns: repeat(2, 1fr);  
     }
+
     #imagenPropuesta{
         display: flex;
         height: 50vh;
         width: 50vw ;
     }
+
     #ultimasNoticias{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-        
-          
+        gap: 40px;   
     }
+
     #piePagina{
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
@@ -331,61 +412,76 @@ ul.contenidoPie li a:hover{
         margin-top: 20px;
         }
     
-    
     /*=== Comportamiento adaptativo para formulario===*/
     .formRegistro{
         width: 400px;
     }
+
     .formRegistro p{
         text-align: center;
         align-items: center;
         font-size: 1rem;
-    }
-    
+    }   
  }
+
  /*===Comportamiento adaptativo tamaño grande ===*/
 @media (min-width: 1200px){
-    #propuestaEducativa{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+    li a{
+        font-size: 22px;
+       
+    }    
+    #itemDerecho2{ 
+        margin-top: -10px;
+        margin-bottom: -20px;
     }
+    #itemDerecho1{
+        margin-top: 10%;
+    }
+
     #banner{
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-         }
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    }
+
     #quienesSomos{
         display: flex;
         height: 60vh;
         margin-bottom: 20px;
     }
+
     #porqueElejirnos{
         display: flex;
         height: 60vh;
         margin-bottom: 20px;
     }
+
     .parrafosPrincipales{
         font-size: larger;
         line-height: 1.6;
-        
     }
+
     .tituloCentrado, .tituloIzquierda{
         font-size: 40px;
     }
-    .propuestaEducativa{
-        margin-bottom: 20px;
-        
+
+    #propuestaEducativa{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
+
     #imagenPropuesta{
-        display: flex;
-        height: 35vh;
-        width: 25vw;
+    display: flex;
+    height: 35vh;
+    width: 25vw;
     }
+
     #ultimasNoticias{
-        gap: 50px;
-        margin: 50px;
-        margin-bottom: 100px;
+    gap: 50px;
+    margin: 50px;
+    margin-bottom: 100px;
     }
+
     .noticia{
         padding: 40px;
     }
